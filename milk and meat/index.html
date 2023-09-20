@@ -82,6 +82,11 @@
          display: inline-block; /* Display as inline-block so it only takes the space it needs */
         }
 
+        .image-container img {
+         display: block; /* Ensure the image is a block element */
+         max-width: 100%; /* Make the image responsive within its container */
+        }
+
         .redirect-button {
          background-color: #f6c129;
          color: #38190d;
@@ -93,6 +98,7 @@
          max-width: 100%; /* Limit the maximum width of the button */
          max-height: 20%;
         }
+<<<<<<< HEAD
         .image-container img {
          display: block; /* Ensure the image is a block element */
          max-width: 100%; /* Make the image responsive within its container */
@@ -114,14 +120,24 @@
                 margin-top: 10%;
             }
 
+=======
+        
+        /* Media query for screens narrower than 768px (typical mobile screens) */
+         @media (max-width: 800px) {
+            .redirect-button {
+             font-size: 8px;
+            padding: 2px 2px;
+            }
+>>>>>>> 50011fd83d1bee2475497258e467e1df97c37534
         }
 
          .redirect-button:hover {
          background-color: #38190d;
          color: #f6c129;
         }
-    </style>
+    </style>
 </head>
+
      <body>
      <header>
      <!-- Logo at the top right corner -->
