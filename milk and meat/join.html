@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat and Milk Store Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="fevicon.png" type="image/x-icon">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 60%;
+    max-width: 80%;
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    /* You can further customize styles for smaller screens here */
+}
+
+/* Media query for screens smaller than 576px (e.g., smaller mobile devices) */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px; /* Adjust font size for even smaller screens */
+    }
+
+    /* Further adjustments for smaller screens */
+}
+
+        .header {
+            border-bottom: 60px;
+            width: 100%;
+           background-color: #55201B;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            background-image: url('C:/Users/Asus/Downloads/milk and meat/bg.png'); /* Replace this URL with your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 80%;
+            width: 70%;
+            background-color:#efce72;
+          
+        }
+
+        h1 {
+            text-align: left;
+            color: #55201B;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            margin-top: 20px;
+            border: 1px solid #413c3c;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: transparent;
+            width: 100%;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: row; /* Display checkboxes in the same row */
+            align-items: center; /* Align checkboxes vertically in the center */
+        }
+
+        .checkbox-group label {
+            margin-right: 10px; /* Add spacing between checkboxes and labels */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #55201B;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+        }
+
+       /* Default styles for larger screens */
+.logo {
+    /* margin-left: 30px;
+    position: absolute;
+    margin-right: 0px;
+    right: 300px;
+    top: 50px;*/
+   
+    transition: transform 0.3s ease;
+}
+.btn-primary{
+    background-color: #55201B; color: #efce72;
+}
+.btn-primary:hover{
+    background-color: #e4b32a; color: #000000;
+
+}
+
+
+
+/* Media query for screens smaller than 768px (e.g., tablets) */
+@media (max-width: 768px) {
+    .logo {
+        right: 100px; /* Adjust the logo's right position for smaller screens */
+        max-width: 150px; /* Reduce the logo's size for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 576px (e.g., mobile devices) */
+@media (max-width: 576px) {
+    .logo {
+        right: 50px; /* Further adjust the logo's right position for smaller screens */
+        max-width: 100px; /* Reduce the logo's size for even smaller screens */
+    }
+}
+
+
+        /* Add hover effect */
+        .logo:hover {
+            transform: scale(1.1); /* Increase the size on hover (1.1 times) */
+        }
+       
+    </style>
+    <script>
+        function checkAllCheckboxes(divId) {
+            // Get the div with id "week"
+            const hiDiv = document.getElementById(divId);
+
+            // Find all checkboxes inside the div
+            const checkboxes = hiDiv.querySelectorAll("input[type='checkbox']");
+
+            // Loop through checkboxes and set their "checked" property to true
+            const first = checkboxes[0];
+
+            if(first.checked){
+                checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+            }else{
+                checkboxes.forEach((checkbox) => {
+                checkbox.checked = true;
+            });
+            }
+
+           
+        }
+    </script>
+</head>
+<body>
+
+   
+    
+    <div class="container">
+         <!-- Logo at the top right corner -->
+         <div class="row">
+             <h1 class="col-md-6">We at The Milk & Meat Store deliver <br> Chicken,  Eggs & Milk<br> at your doorstep fresh and locally procured...</h1>
+             <img src="logo.png" alt="Logo" class="col-md-6 ">
+         </div>
+         <div>
+</div> 
+        <form action="mailto:subscribe@meatnmilk.com" method="post" enctype="text/plain" id="registrationForm">
+            <div class="form-group">
+                <label class="h5" for="locality">Locality/Area:</label>
+                <input type="text" class="form-control" id="locality" name="locality" required>
+            </div>
+
+            <div class="form-group">
+                <label class="h5"  for="society">Society Name:</label>
+                <input type="text" class="form-control" id="society" name="society" required>
+            </div>
+
+            <div class="form-group">
+                <label class="h5" for="room">Wing/Room No:</label>
+                <input type="text" class="form-control" id="room" name="room" required>
+            </div>
+
+            <div class="form-group">
+                <label class="h5" for="fullname">Full Name:</label>
+                <input type="text" class="form-control" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label class="h5" for="familymembers">Family Members (No):</label>
+                <input type="number" class="form-control" id="familymembers" name="familymembers" required>
+            </div>
+
+            <div class="form-group">
+                <label class="h5" for="contact">Mobile Number:</label>
+                <input type="tel" class="form-control" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required>
+            </div>
+            
+
+            <div class="form-group">
+                <label style="font-size: 23px; font-weight: bold;">Preferences:</label>
+                <fieldset class="f1">
+                    <fieldset >
+                    <legend>Milk:</legend>
+                    <div class="form-group">
+                        <label for="milk_quantity">Quantity Per Day (In Liters):</label>
+                        <input type="number" class="form-control" id="milk_quantity" name="milk_quantity">
+                    </div>
+                    <div class="container">
+                        <div class="list-group row" id="mlik">
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Monday">Monday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Sunday">Sunday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Tuesday">Tuesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Wednesday">Wednesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Thursday">Thursday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Friday">Friday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="milk_day[]" value="Saturday">Saturday</label></div>
+                                <button class="btn btn-primary inline" type="button" onclick="checkAllCheckboxes('mlik')">Full Week</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Eggs:</legend>
+                    <div class="form-group">
+                        <label for="eggs_quantity">Quantity Per Day (In Pieces):</label>
+                        <input type="number" class="form-control" id="eggs_quantity" name="eggs_quantity">
+                    </div>
+                    <div class="container">
+                        <div class="list-group row" id="eggs">
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Monday">Monday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Sunday">Sunday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Tuesday">Tuesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Wednesday">Wednesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Thursday">Thursday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Friday">Friday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="eggs_day[]" value="Saturday">Saturday</label></div>
+                                <button class="btn btn-primary inline" type="button" onclick="checkAllCheckboxes('eggs')">Full Week</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Chicken:</legend>
+                    <div class="form-group">
+                        <label for="chicken_quantity">Quantity Per Day (In Kgs):</label>
+                        <input type="number" class="form-control" id="chicken_quantity" name="chicken_quantity">
+                    </div>
+                    <div class="container">
+                        <div class="list-group row" id="chicken">
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Monday">Monday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Sunday">Sunday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Tuesday">Tuesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Wednesday">Wednesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Thursday">Thursday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Friday">Friday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="chicken_day[]" value="Saturday">Saturday</label></div>
+                                <button class="btn btn-primary inline" type="button" onclick="checkAllCheckboxes('chicken')">Full Week</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Bread:</legend>
+                    <div class="form-group">
+                        <label for="bread_quantity">Quantity Per Day (Per Packet):</label>
+                        <input type="number" class="form-control" id="bread_quantity" name="bread_quantity">
+                    </div>
+                    
+                    <div class="container">
+                        <div class="list-group row" id="bread">
+                            <div class="col-md-12">
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Monday">Monday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Sunday">Sunday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Tuesday">Tuesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Wednesday">Wednesday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Thursday">Thursday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Friday">Friday</label></div>
+                                <div class="form-check form-check-inline"><label class="list-group-item"><input class="form-check-input me-1" type="checkbox" name="bread_day[]" value="Saturday">Saturday</label></div>
+                                <button class="btn btn-primary inline" type="button" onclick="checkAllCheckboxes('bread')">Full Week</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <div class="form-group">
+                  
+                    <div class="checkbox-group">
+                        
+                        <label><input type="checkbox" name="time[]" value="Morning">Morning</label>
+                        <label><input type="checkbox" name="time[]" value="Evening">Evening</label>
+                    </div>
+                </div>
+                
+                </fieldset>
+            </div>
+
+            <button type="submit" class="btn btn-primary" >Register</button><br>        </form>
+    </div>
+
+   
+
+    <div class="footer">
+        <p>&copy; Meat and Milk Store</p>
+    </div>
+
+</body>
+</html>

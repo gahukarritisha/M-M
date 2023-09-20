@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meat&Milk Store</title>
+
+    <link rel="icon" href="fevicon.png" type="image/x-icon">
+
+    <style>
+        /* Reset the margin on the body element */
+        body {
+            margin: 0;
+        }
+
+        /* Style for the fixed navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 10px;
+    width: 100%;
+    background-color: #55201B; /* Background color for the navbar */
+    color: white; /* Text color */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    font-size: 20px; /* Font size */
+    font-weight: bold;
+}
+
+        /* Style for the navbar links */
+        .navbar a {
+            color: white; /* Link text color */
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 20px; /* Add spacing between links */
+        }
+        /* Style for the navbar links on hover */
+        .navbar a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        /* Style for the sections */
+        .section {
+            padding: 20px;
+            transition: transform 0.3s ease; /* Add a smooth transition effect for hover */
+        }
+       
+        .section1 {
+            margin-top: 0;
+            background-color: white;
+            color: white;
+        }
+        .section2 {
+            margin-top: 0px;
+            background-color: white;
+            color: white;
+        }
+        .section3 {
+            margin-top: 0;
+            background-color: white;
+            color: white;
+        }
+        .section4 {
+            margin-top: 0;
+            background-color: white;
+            color: black;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            width: 100%; /* Add this line to make the image take up 100% of its container's width */
+            display: block;
+            margin: 0 auto;
+        }
+        .f1 {
+            margin-top: 100px;
+        }
+        /* Add spacing to push content below the fixed navbar */
+        .spacer {
+            height: 30px; /* Adjust this value to match the height of your navbar */
+        }
+        /* Style for the logo */
+        .logo {
+            position: absolute;
+            margin-right: 10px;
+            right: 20px; /* Adjust the right position as needed */
+            top:40px; /* Decrease the top size above the logo */
+            max-width: 180px; /* Increase the width for a larger logo */
+            /* Automatically adjust the height to maintain aspect ratio */
+            transition: transform 0.3s ease; /* Add a smooth transition effect */
+        }
+
+        /* Add hover effect */
+        .logo:hover {
+            transform: scale(1.1); /* Increase the size on hover (1.1 times) */
+        }
+        .section3 {
+    /* Add any styling you want to apply to the container here */
+    position: relative; /* Set the container as a relative positioning context */
+}
+
+.image-container {
+    position: relative; /* Set this container as a relative positioning context */
+    display: inline-block; /* Display as inline-block so it only takes the space it needs */
+}
+
+.image-container img {
+    display: block; /* Ensure the image is a block element */
+    max-width: 100%; /* Make the image responsive within its container */
+    
+}
+
+.redirect-button {
+    background-color:  #f6c129;
+    color: #38190d;;
+    font-size: 30px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute; /* Position the button absolutely within the container */
+    top: 70%; /* Move the button 50% down from the top of the container */
+    left: 15%; /* Move the button 50% from the left of the container */
+    transform: translate(-50%, -50%); /* Center the button */
+    z-index: 1; /* Ensure the button appears above the image */
+}
+
+.redirect-button:hover {
+    background-color:#38190d;
+    color:#f6c129;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Logo at the top right corner -->
+    <img src="logo.png" alt="Logo" class="logo"> <!-- Replace "your-logo-image.png" with the actual path to your logo image -->
+    <!-- Fixed Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#section1">About Us</a>
+        <a href="#section2">Our Offerings</a>
+        <a href="#section3">About</a>
+    <a href="join.html">Join Us..</a>
+    </div>
+    <!-- Spacer to create space below the fixed navbar -->
+    <div class="spacer"></div>
+    <div class="container">
+        <!-- Page Content -->
+        <div class="section section1" id="home">
+            <img src="1.png" alt="Image 1">
+        </div>
+        <div class="section section2" id="section1">
+            <img src="5.png" alt="Image 2">
+        </div>
+        <div class="section section3" id="section2">
+            <img src="2.png" alt="Image 3">
+        </div>
+        <div class="section section3" id="section3">
+            <div class="image-container">
+                <img src="3 (2).png" alt="Image 4">
+                <a href="join.html" class="redirect-button"><b>Click Here To Join us.....</b></a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
