@@ -65,11 +65,12 @@
         /* Style for the logo */
         .logo {
             position: absolute;
-            top: 10px;
+           margin-top:3%;
             right: 10px;
-            max-width: 180px;
+            max-width: 120px;
             transition: transform 0.3s ease;
         }
+        
 
         /* Add hover effect for the logo */
         .logo:hover {
@@ -98,13 +99,22 @@
         }
 
 
-        /* Media query for screens narrower than 768px (typical mobile screens) */
-         @media (max-width: 800px) {
-         .redirect-button {
-         font-size: 8px;
-         padding: 2px 2px;
+        @media (max-width: 800px) {
+            .redirect-button {
+                font-size: 16px; /* Adjust font size for smaller screens */
+                padding: 8px 16px; /* Adjust padding for smaller screens */
+            }
+
+            .logo {
+                max-width: 50px;
+                margin-top: 18%; /* Reduce the size of the logo on mobile view */
+            }
+            .section section1
+            {
+                margin-top: 10%;
+            }
+
         }
-      }
 
          .redirect-button:hover {
          background-color: #38190d;
@@ -126,11 +136,11 @@
      </div>
      </header>
      <!-- Spacer to create space below the fixed navbar -->
-         <div class="spacer"></div>
-    <div class="container">
+         /* <div class="spacer" ></div> */
+    <div class="container" >
         <!-- Page Content -->
-        <div class="section section1" id="home">
-            <img src="1.png" alt="Image 1">
+        <div class="section section1" id="home" >
+            <img src="1.png" alt="Image 1" >
         </div>
         <div class="section section2" id="aboutUs">
             <img src="5.png" alt="Image 2">
