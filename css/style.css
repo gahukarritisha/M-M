@@ -1,136 +1,114 @@
+/* Reset the margin and padding on the body element */
+body {
+    margin: 0;
+    padding: 0;
+}
 
-        /* Reset the margin and padding on the body element */
-        body {
-            margin: 0;
-            padding: 0;
-        }
+/* Style for the fixed navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #55201B;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    z-index: 2; /* Set a higher z-index value to ensure it's above other content */
+}
 
-        /* Style for the fixed navbar */
-        .navbar {
-         position: fixed;
-         top: 0;
-         left: 0;
-         right: 0;
-         background-color: #55201B;
-         color: white;
-         text-align: center;
-         font-size: 20px;
-         font-weight: bold;
-         padding: 10px 0;
-         z-index: 2; /* Set a higher z-index value to ensure it's above other content */
-        }
+/* Style for the navbar links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
 
-        /* Style for the navbar links */
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-        }
+/* Style for the navbar links on hover */
+.navbar a:hover {
+    text-decoration: underline;
+}
 
-        /* Style for the navbar links on hover */
-        .navbar a:hover {
-            text-decoration: underline;
-        }
+/* Style for the sections */
+.section {
+    padding: 20px;
+}
 
-        /* Style for the sections */
-        .section {
-            padding: 20px;
-        }
+.section1, .section2, .section3, .section4 {
+    background-color: white;
+    color: white;
+}
 
-        .section1, .section2, .section3, .section4 {
-            background-color: white;
-            color: white;
-        }
+.section4 {
+    color: black;
+}
 
-        .section4 {
-            color: black;
-        }
+/* Style for responsive images */
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-        /* Style for responsive images */
-        .section img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+/* Style for the logo */
+.logo {
+    position: absolute;
+    margin-top: 3%;
+    right: 10px;
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
 
-        /* Style for the logo */
-        .logo {
-            position: absolute;
-           margin-top:3%;
-            right: 10px;
-            max-width: 120px;
-            transition: transform 0.3s ease;
-        }
-        
+/* Add hover effect for the logo */
+.logo:hover {
+    transform: scale(1.1);
+}
 
-        /* Add hover effect for the logo */
-        .logo:hover {
-            transform: scale(1.1);
-        }
+.image-container {
+    position: relative; /* Set this container as a relative positioning context */
+    display: inline-block; /* Display as inline-block so it only takes the space it needs */
+}
 
-        .image-container {
-          position: relative; /* Set this container as a relative positioning context */
-         display: inline-block; /* Display as inline-block so it only takes the space it needs */
-        }
+.image-container img {
+    display: block; /* Ensure the image is a block element */
+    max-width: 100%; /* Make the image responsive within its container */
+}
 
-        .image-container img {
-         display: block; /* Ensure the image is a block element */
-         max-width: 100%; /* Make the image responsive within its container */
-        }
+.redirect-button {
+    background-color: #f6c129;
+    color: #38190d;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%; /* Limit the maximum width of the button */
+    max-height: 20%;
+}
 
-        .redirect-button {
-         background-color: #f6c129;
-         color: #38190d;
-         font-size: 20px;
-         padding: 10px 20px;
-         display: block;
-         margin: 0 auto;
-         text-align: center;
-         max-width: 100%; /* Limit the maximum width of the button */
-         max-height: 20%;
-        }
-<<<<<<<< HEAD:css/style.css
+/* Media query for screens narrower than 800px */
+@media (max-width: 800px) {
+    .redirect-button {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
 
-========
->>>>>>>> feb1d54d5acbe110a0aa8f30c7a178e6d8e7e9af:index.html
-        .image-container img {
-         display: block; /* Ensure the image is a block element */
-         max-width: 100%; /* Make the image responsive within its container */
-        }
+    .logo {
+        max-width: 50px;
+        margin-top: 18%; /* Reduce the size of the logo on mobile view */
+    }
 
+    /* Additional styles for section1 at mobile view */
+    .section.section1 {
+        margin-top: 10%;
+    }
+}
 
-        @media (max-width: 800px) {
-            .redirect-button {
-                font-size: 16px; /* Adjust font size for smaller screens */
-                padding: 8px 16px; /* Adjust padding for smaller screens */
-            }
-
-            .logo {
-                max-width: 50px;
-                margin-top: 18%; /* Reduce the size of the logo on mobile view */
-            }
-            .section section1
-            {
-                margin-top: 10%;
-            }
-
-<<<<<<<< HEAD:css/style.css
-
-        
-        /* Media query for screens narrower than 768px (typical mobile screens) */
-         @media (max-width: 800px) {
-            .redirect-button {
-             font-size: 8px;
-            padding: 2px 2px;
-            }
-
-========
->>>>>>>> feb1d54d5acbe110a0aa8f30c7a178e6d8e7e9af:index.html
-        }
-
-        .redirect-button:hover {
-         background-color: #38190d;
-         color: #f6c129;
-        }
-    
+/* Additional style for button hover effect */
+.redirect-button:hover {
+    background-color: #38190d;
+    color: #f6c129;
+}
