@@ -1,0 +1,180 @@
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+}
+
+.container {
+width: 60%;
+max-width: 80%;
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+body {
+font-size: 16px; /* Adjust the font size for smaller screens */
+}
+
+.container {
+width: 90%; /* Adjust container width for smaller screens */
+}
+
+/* You can further customize styles for smaller screens here */
+}
+
+/* Media query for screens smaller than 576px (e.g., smaller mobile devices) */
+@media (max-width: 576px) {
+body {
+font-size: 14px; /* Adjust font size for even smaller screens */
+}
+
+/* Further adjustments for smaller screens */
+}
+
+.header {
+    border-bottom: 60px;
+    width: 100%;
+   background-color: #55201B;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    background-image: url('C:/Users/Asus/Downloads/milk and meat/bg.png'); /* Replace this URL with your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 80%;
+    width: 70%;
+    background-color:#efce72;
+  
+}
+
+h1 {
+    text-align: left;
+    color: #55201B;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #413c3c;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row; /* Display checkboxes in the same row */
+    align-items: center; /* Align checkboxes vertically in the center */
+}
+
+.checkbox-group label {
+    margin-right: 10px; /* Add spacing between checkboxes and labels */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    text-align: center;
+    background-color: #55201B;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Default styles for larger screens */
+.logo {
+/* margin-left: 30px;
+position: absolute;
+margin-right: 0px;
+right: 300px;
+top: 50px;*/
+
+transition: transform 0.3s ease;
+}
+.btn-primary{
+background-color: #55201B; color: #efce72;
+}
+.btn-primary:hover{
+background-color: #e4b32a; color: #000000;
+
+}
+
+
+
+/* Media query for screens smaller than 768px (e.g., tablets) */
+@media (max-width: 768px) {
+.logo {
+right: 100px; /* Adjust the logo's right position for smaller screens */
+max-width: 150px; /* Reduce the logo's size for smaller screens */
+}
+}
+
+/* Media query for screens smaller than 576px (e.g., mobile devices) */
+@media (max-width: 576px) {
+.logo {
+right: 50px; /* Further adjust the logo's right position for smaller screens */
+max-width: 100px; /* Reduce the logo's size for even smaller screens */
+}
+}
+
+
+/* Add hover effect */
+.logo:hover {
+    transform: scale(1.1); /* Increase the size on hover (1.1 times) */
+}
+
