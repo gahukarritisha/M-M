@@ -90,7 +90,10 @@
          max-width: 100%; /* Limit the maximum width of the button */
          max-height: 20%;
         }
+<<<<<<<< HEAD:css/style.css
 
+========
+>>>>>>>> feb1d54d5acbe110a0aa8f30c7a178e6d8e7e9af:index.html
         .image-container img {
          display: block; /* Ensure the image is a block element */
          max-width: 100%; /* Make the image responsive within its container */
@@ -112,6 +115,7 @@
                 margin-top: 10%;
             }
 
+<<<<<<<< HEAD:css/style.css
 
         
         /* Media query for screens narrower than 768px (typical mobile screens) */
@@ -121,6 +125,8 @@
             padding: 2px 2px;
             }
 
+========
+>>>>>>>> feb1d54d5acbe110a0aa8f30c7a178e6d8e7e9af:index.html
         }
 
         .redirect-button:hover {
